@@ -1,0 +1,29 @@
+# screen_security_kit/pubspec.yaml
+name: screen_security_kit
+description: A Flutter plugin to enhance screen security, preventing screenshots/recordings on Android and providing events on iOS, plus app switching blur/whiteout.
+version: 0.0.1
+homepage: https://example.com/screen_security_kit
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  plugin_platform_interface: ^2.1.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+# The following section is specific to Flutter plugins.
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.example.screensecuritykit
+        pluginClass: ScreenSecurityKitPlugin
+      ios:
+        pluginClass: ScreenSecurityKitPlugin
