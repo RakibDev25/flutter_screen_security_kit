@@ -66,3 +66,6 @@ Contributions are welcome!
 
 If you find a bug or have a feature request, feel free to open an issue or submit a pull request. Please follow standard Flutter/Dart formatting and write clear commit messages.
 
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+
+
