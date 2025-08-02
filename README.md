@@ -55,6 +55,23 @@ Add the following to your `pubspec.yaml`:
 dependencies:
   screen_security_kit: ^1.0.0
 ```
+```dart
+import 'package:screen_security_kit/screen_security_kit.dart';
+
+// Initialize (recommended in main or initState)
+await ScreenSecurityKit.initialize();
+
+// Listen for screenshot events
+ScreenSecurityKit.onScreenshotTaken.listen((_) {
+  print('Screenshot detected!');
+});
+
+// Disable screen capture
+await ScreenSecurityKit.disableScreenCapture();
+
+// Enable screen capture
+await ScreenSecurityKit.enableScreenCapture();
+```
 
 ## 🚀 Example
 

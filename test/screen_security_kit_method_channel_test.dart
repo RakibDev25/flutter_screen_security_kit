@@ -5,13 +5,15 @@ import 'package:screen_security_kit/screen_security_kit_method_channel.dart';
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
 
-  MethodChannelScreenSecurityKit platform = MethodChannelScreenSecurityKit();
-  const MethodChannel channel = MethodChannel('screen_security_kit');
-
+  // Use the same channel name as in your MethodChannelScreenSecurityKit implementation
+  const MethodChannel channel = MethodChannel('com.example.screensecuritykit_rakibul25/methods');
   final List<MethodCall> log = <MethodCall>[];
 
+  late MethodChannelScreenSecurityKit platform;
+
   setUp(() {
-    channel.setMockMethodCallHandler((MethodCall methodCall) async {
+    platform = MethodChannelScreenSecurityKit();
+    TestDefaultBinaryMessengerBinding.instance.defaultBinaryMessenger.setMockMethodCallHandler(channel, (MethodCall methodCall) async {
       log.add(methodCall);
       return null;
     });
@@ -19,7 +21,7 @@ void main() {
   });
 
   tearDown(() {
-    channel.setMockMethodCallHandler(null);
+    TestDefaultBinaryMessengerBinding.instance.defaultBinaryMessenger.setMockMethodCallHandler(channel, null);
   });
 
   test('disableScreenCapture sends correct method call', () async {

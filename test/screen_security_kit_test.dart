@@ -1,5 +1,4 @@
 import 'dart:async';
-
 import 'package:flutter_test/flutter_test.dart';
 import 'package:screen_security_kit/screen_security_kit.dart';
 import 'package:screen_security_kit/screen_security_kit_platform_interface.dart';
@@ -31,7 +30,6 @@ class MockScreenSecurityKitPlatform
   @override
   Stream<void> get onScreenshotTaken => _screenshotController.stream;
 
-  // Helper to emit screenshot event for test
   void emitScreenshotEvent() {
     _screenshotController.add(null);
   }
@@ -42,8 +40,12 @@ class MockScreenSecurityKitPlatform
 }
 
 void main() {
-  final mockPlatform = MockScreenSecurityKitPlatform();
-  ScreenSecurityKitPlatform.instance = mockPlatform;
+  late MockScreenSecurityKitPlatform mockPlatform;
+
+  setUp(() {
+    mockPlatform = MockScreenSecurityKitPlatform();
+    ScreenSecurityKitPlatform.instance = mockPlatform;
+  });
 
   tearDown(() {
     mockPlatform.dispose();
@@ -70,7 +72,7 @@ void main() {
 
     mockPlatform.emitScreenshotEvent();
 
-    await Future.delayed(Duration.zero); // wait event loop
+    await Future.delayed(Duration.zero);
     expect(events.length, 1);
 
     await subscription.cancel();
