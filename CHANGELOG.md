@@ -1,3 +1,4 @@
-## [0.0.1] - Initial release
-- Android: Enable/disable screenshot & add blur on app switch.
-- iOS: Screenshot notification callback.
+## [1.0.2] - 2024-06-10
+- Improved README formatting and code examples.
+- Updated dependencies.
+- Minor documentation fixes.

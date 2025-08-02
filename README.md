@@ -30,7 +30,7 @@ Add the following to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  screen_security_kit: ^1.0.0
+  screen_security_kit: ^1.0.1
 ```
 ```dart
 import 'package:screen_security_kit/screen_security_kit.dart';
