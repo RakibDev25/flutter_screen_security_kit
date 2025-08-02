@@ -34,7 +34,8 @@ abstract class ScreenSecurityKitPlatform extends PlatformInterface {
   ///
   /// Must be implemented by platform-specific subclasses.
   Future<void> disableScreenCapture() {
-    throw UnimplementedError('disableScreenCapture() has not been implemented.');
+    throw UnimplementedError(
+        'disableScreenCapture() has not been implemented.');
   }
 
   /// Enables screen capture again on supported platforms.
@@ -55,6 +56,7 @@ abstract class ScreenSecurityKitPlatform extends PlatformInterface {
   ///
   /// Must be implemented by platform-specific subclasses. Emits `void` events.
   Stream<void> get onScreenshotTaken {
-    throw UnimplementedError('onScreenshotTaken getter has not been implemented.');
+    throw UnimplementedError(
+        'onScreenshotTaken getter has not been implemented.');
   }
 }

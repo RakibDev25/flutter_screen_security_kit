@@ -2,6 +2,7 @@ library screen_security_kit;
 
 import 'dart:async';
 import 'screen_security_kit_platform_interface.dart';
+
 /// Provides an interface for controlling screen security features such as
 /// disabling screen capture and detecting screenshots.
 ///

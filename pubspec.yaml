@@ -1,5 +1,5 @@
 name: screen_security_kit
-description: A Flutter plugin to enhance screen security by preventing screenshots and recordings on Android, providing screenshot event notifications on iOS, and enabling app switch screen blur/whiteout.
+description: A Flutter plugin to prevent screenshots/recordings on Android, notify on iOS screenshots, and blur/whiteout app switcher previews.
 version: 0.0.1
 homepage: https://github.com/RakibDev25/flutter_screen_security_kit
 repository: https://github.com/RakibDev25/flutter_screen_security_kit

@@ -14,13 +14,14 @@ class MethodChannelScreenSecurityKit extends ScreenSecurityKitPlatform {
   ///
   /// Used to enable or disable screen capture on Android.
   @visibleForTesting
-  final MethodChannel methodChannel = const MethodChannel('com.example.screensecuritykit_rakibul25/methods');
-
+  final MethodChannel methodChannel =
+      const MethodChannel('com.example.screensecuritykit_rakibul25/methods');
 
   /// EventChannel for receiving screenshot events from iOS.
   ///
   /// Emits events when the user takes a screenshot. Only supported on iOS.
-  final EventChannel _eventChannel = const EventChannel('com.example.screensecuritykit_rakibul25/events');
+  final EventChannel _eventChannel =
+      const EventChannel('com.example.screensecuritykit_rakibul25/events');
 
   /// Internal stream for broadcasting screenshot events.
   Stream<void>? _onScreenshotTakenStream;
@@ -64,9 +65,8 @@ class MethodChannelScreenSecurityKit extends ScreenSecurityKitPlatform {
   /// Emits `null` for each screenshot event. No events are emitted on other platforms.
   @override
   Stream<void> get onScreenshotTaken {
-    _onScreenshotTakenStream ??= _eventChannel
-        .receiveBroadcastStream()
-        .map((event) {
+    _onScreenshotTakenStream ??=
+        _eventChannel.receiveBroadcastStream().map((event) {
       if (event == 'screenshotTaken') {
         return null; // just emit an event (void)
       }
