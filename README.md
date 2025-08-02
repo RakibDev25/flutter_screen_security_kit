@@ -16,34 +16,11 @@ A Flutter plugin to improve screen security by managing screenshot behavior and 
 
 ---
 
-## 📷 Screenshots
+## 📷 Screenshots (Android, iOS)
 
 ### Android
 
-<table>
-  <tr>
-    <td><b>Screenshot Enabled/Disabled</b></td>
-    <td><b>App Switch Blur</b></td>
-  </tr>
-  <tr>
-    <td><img src="https://github.com/RakibDev25/flutter_screen_security_kit/blob/main/assets/Screenshot_2025_08_01_19_56_09_33_64b749b07536bc4701338803e76bb217.jpg?raw=true" width="250" height="475"/></td>
-    <td><img src="https://github.com/RakibDev25/flutter_screen_security_kit/blob/main/assets/Screenshot_2025_08_01_19_56_50_71_b783bf344239542886fee7b48fa4b892.jpg?raw=true" width="250" height="475"/></td>
-  </tr>
-</table>
-
-### iOS
-
-<table>
-  <tr>
-    <td><b>Normal UI</b></td>
-    <td><b>Screenshot Taken Dialog</b></td>
-  </tr>
-  <tr>
-    <td><img src="https://github.com/RakibDev25/flutter_screen_security_kit/blob/main/assets/IMG_0536.PNG?raw=true" width="250" height="475"/></td>
-    <td><img src="https://github.com/RakibDev25/flutter_screen_security_kit/blob/main/assets/IMG_0537.PNG?raw=true" width="250" height="475"/></td>
-  </tr>
-</table>
-
+![Screenshots](https://github.com/RakibDev25/flutter_screen_security_kit/raw/main/assets/images.png)
 
 ---
 
