@@ -75,7 +75,7 @@ await ScreenSecurityKit.enableScreenCapture();
 
 ## 🚀 Example
 
-Check out the [example app here](https://github.com/RakibDev25/flutter_screen_security_kit/blob/main/example/lib/main.dart) to see how to use this plugin.
+Check out the [example app here](https://github.com/RakibDev25/flutter_screen_security_kit/blob/main/example/lib/main.dart).
 
 
 ## 🤝 Contribute
