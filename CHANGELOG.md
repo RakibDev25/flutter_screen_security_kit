@@ -1,4 +1,2 @@
-## [1.0.2] - 2024-06-10
-- Improved README formatting and code examples.
-- Updated dependencies.
-- Minor documentation fixes.
+## [1.0.3] - 2024-06-11
+- Added iOS platform check before initializing screenshot detection.
