@@ -1,2 +1,2 @@
-## [0.0.3] - 2024-06-11
-- Added iOS platform check before initializing screenshot detection.
+## [0.0.4] - 2024-06-12
+- Formatted Dart files to match standard style and pass static analysis.
