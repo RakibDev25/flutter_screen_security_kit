@@ -10,7 +10,8 @@ class MockScreenSecurityKitPlatform
   bool disabled = false;
   bool enabled = false;
   bool initialized = false;
-  final StreamController<void> _screenshotController = StreamController<void>.broadcast();
+  final StreamController<void> _screenshotController =
+      StreamController<void>.broadcast();
 
   @override
   Future<void> disableScreenCapture() async {

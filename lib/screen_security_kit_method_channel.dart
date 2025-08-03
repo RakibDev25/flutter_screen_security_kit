@@ -66,7 +66,7 @@ class MethodChannelScreenSecurityKit extends ScreenSecurityKitPlatform {
   /// Emits `null` for each screenshot event. No events are emitted on other platforms.
   @override
   Stream<void> get onScreenshotTaken {
-    if(!Platform.isIOS) {
+    if (!Platform.isIOS) {
       // If not on iOS, return an empty stream
       return const Stream<void>.empty();
     }

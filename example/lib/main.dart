@@ -92,12 +92,19 @@ class _MyAppState extends State<MyApp> {
             children: [
               Card(
                 elevation: 4,
-                margin: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
+                margin: const EdgeInsets.symmetric(
+                  horizontal: 24,
+                  vertical: 12,
+                ),
                 child: Padding(
                   padding: const EdgeInsets.all(24),
                   child: Column(
                     children: [
-                      const Icon(Icons.security, size: 48, color: Colors.deepPurple),
+                      const Icon(
+                        Icons.security,
+                        size: 48,
+                        color: Colors.deepPurple,
+                      ),
                       const SizedBox(height: 16),
                       Text(
                         _status,
@@ -119,7 +126,10 @@ class _MyAppState extends State<MyApp> {
                 elevation: 2,
                 margin: const EdgeInsets.symmetric(horizontal: 24),
                 child: Padding(
-                  padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 16),
+                  padding: const EdgeInsets.symmetric(
+                    vertical: 20,
+                    horizontal: 16,
+                  ),
                   child: Column(
                     children: [
                       ElevatedButton.icon(
