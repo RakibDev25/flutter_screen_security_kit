@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'dart:io';
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
@@ -65,6 +66,10 @@ class MethodChannelScreenSecurityKit extends ScreenSecurityKitPlatform {
   /// Emits `null` for each screenshot event. No events are emitted on other platforms.
   @override
   Stream<void> get onScreenshotTaken {
+    if(!Platform.isIOS) {
+      // If not on iOS, return an empty stream
+      return const Stream<void>.empty();
+    }
     _onScreenshotTakenStream ??=
         _eventChannel.receiveBroadcastStream().map((event) {
       if (event == 'screenshotTaken') {
